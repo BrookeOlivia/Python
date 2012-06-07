@@ -1,0 +1,36 @@
+def main():
+    pass
+
+if __name__ == '__main__':
+    main()
+
+
+print "new section"
+from random import randrange
+
+
+#grades= randrange(0,100),randrange(0,100),randrange(0,100),randrange(0,100),\
+#randrange(0,100),randrange(0,100),randrange(0,100),randrange(0,100),randrange(0,100)
+#print grades
+
+grades = 0
+gradeaverage=0
+
+while grades <=20:
+    grade= randrange(0,100)
+
+    if grade <= 60:
+
+        print grade,":I'm sorry you have to repeat this class"
+
+    else:
+        print grade, ":Congratulations you can move on!"
+    gradeaverage+= grade
+
+    grades=grades+1
+
+average = gradeaverage/grades
+#print "\rThe grade average is ",gradeaverage/grades
+
+name=raw_input("What is your name?")
+print "\rHello", name,"the class average is", average
